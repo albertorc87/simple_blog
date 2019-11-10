@@ -13,11 +13,7 @@ class Profile(models.Model):
     """
     user = models.OneToOneField(User, on_delete=models.PROTECT)
 
-    website = models.CharField(
-        max_length=200,
-        null=True,
-        default='',
-    )
+    website = models.URLField(max_length=200, blank=True)
 
     photo = models.ImageField(
         upload_to='users/pictures',
