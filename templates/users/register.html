@@ -1,0 +1,20 @@
+{% extends "users/base.html" %}
+{% block title %}Simple blog - Registro{% endblock %}
+{% block content %}
+<form class="form-signin">
+    <h1><a href="#" class="title-link">Simple Blog</a></h1>
+    <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+    <label for="inputEmail" class="sr-only">Email</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputUsername" class="sr-only">Nombre de usuario</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Nombre de usuario" required>
+    <label for="inputPassword" class="sr-only">Contraseña</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+    <label for="inputPassword" class="sr-only">Repetir contraseña</label>
+    <input type="password" id="inputPasswordRepeat" class="form-control" placeholder="Repetir contraseña" required>
+    <div class="checkbox mb-3"></div>
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Simple Blog {% now "Y" %}</p>
+    </form>
+{% endblock %} 
