@@ -1,3 +1,4 @@
 env/
 .vscode/
+.sass-cache/
 post.txt

@@ -9,6 +9,11 @@
     <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
     <div class="checkbox mb-3"></div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+    {% if message %}
+        <div class="alert alert-success">
+            <strong>{{ message }}</strong>
+        </div>
+    {% endif %}
     <p class="mt-5 mb-3 text-muted">&copy; Simple Blog {% now "Y" %}</p>
     </form>
 {% endblock %} 

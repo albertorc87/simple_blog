@@ -19,7 +19,7 @@ class SignupForm(forms.Form):
     username = forms.CharField(
         min_length=6,
         max_length=70,
-        widget=forms.EmailInput()
+        widget=forms.TextInput()
     )
     password = forms.CharField(
         max_length=70,
@@ -40,6 +40,20 @@ class SignupForm(forms.Form):
 
         if password != password_confirmation:
             raise forms.ValidationError('Las contraseñas no coinciden.')
+
+        try:
+            User.objects.get(email=data['email'])
+        except User.DoesNotExist:
+            pass
+        else:
+            raise forms.ValidationError('El email ya existe')
+
+        try:
+            User.objects.get(username=data['username'])
+        except User.DoesNotExist:
+            pass
+        else:
+            raise forms.ValidationError('El nombre de usuario ya existe')
 
         return data
 
