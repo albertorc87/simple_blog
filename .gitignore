@@ -2,3 +2,4 @@ env/
 .vscode/
 .sass-cache/
 post.txt
+db.sqlite3

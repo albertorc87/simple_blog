@@ -9,7 +9,7 @@ from users import views
 urlpatterns = [
     path(
         route='login',
-        view=TemplateView.as_view(template_name='users/login.html'),
+        view=views.LoginView.as_view(),
         name='login'
     ),
     path(
