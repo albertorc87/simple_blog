@@ -22,7 +22,7 @@
                 <div class="alert alert-danger">
                     <strong>{{ error|escape }}</strong>
                 </div>
-            {% endfor %}
+            {% endfor %}ç
         {% endfor %}
         {% for error in form.non_field_errors %}
             <div class="alert alert-danger">
@@ -31,6 +31,6 @@
         {% endfor %}
     {% endif %}
     
-    <p class="mt-5 mb-3 text-muted">&copy; Simple Blog 2 {% now "Y" %}</p>
+    <p class="mt-5 mb-3 text-muted">&copy; Simple Blog {% now "Y" %}</p>
     </form>
 {% endblock %} 

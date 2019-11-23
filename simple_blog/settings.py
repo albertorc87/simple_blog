@@ -57,9 +57,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-AUTHENTICATION_BACKENDS = ['users.authmail.EmailBackend',]
-
-
 ROOT_URLCONF = 'simple_blog.urls'
 
 TEMPLATES = [
