@@ -4,10 +4,10 @@
     {% csrf_token %}
     <h1><a href="#" class="title-link">Simple Blog</a></h1>
     <h1 class="h3 mb-3 font-weight-normal">Login</h1>
-    <label for="id_username" class="sr-only">Email/Usuario</label>
-    <input type="text" id="id_username" class="form-control" placeholder="" name="username" required autofocus>
+    <label for="id_username" class="sr-only">Usuario</label>
+    <input type="text" id="id_username" class="form-control" placeholder="Usuario" name="username" required autofocus>
     <label for="id_password" class="sr-only">Contraseña</label>
-    <input type="password" id="id_password" class="form-control" placeholder="" name="password" required>
+    <input type="password" id="id_password" class="form-control" placeholder="Contraseña" name="password" required>
     <div class="checkbox mb-3"></div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
     {% if form.errors %}

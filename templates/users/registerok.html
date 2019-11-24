@@ -1,0 +1,17 @@
+{% extends "users/base.html" %}
+{% block title %}Simple blog - Registro completado{% endblock %}
+{% block content %}
+ <main role="main" class="container">
+
+    <div class="starter-template">
+    <h1>Tu usuario ha sido creado con exito</h1>
+    <p class="lead">Si la página no es redirigida en 5 segundos pulsa <a href="{% url 'users:login' %}">aquí</a></p>
+    </div>
+
+</main>
+<script>
+    setTimeout(function(){ 
+        window.location.replace("{% url 'users:login' %}");
+    }, 5000);
+</script>
+{% endblock %} 

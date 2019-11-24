@@ -22,4 +22,9 @@ urlpatterns = [
         view=views.LogoutView.as_view(),
         name='logout'
     ),
+    path(
+        route='registro_completado/',
+        view=TemplateView.as_view(template_name='users/registerok.html'),
+        name='registerok'
+    ),
 ]
