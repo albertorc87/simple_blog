@@ -32,12 +32,12 @@ class SignupForm(forms.Form):
 
 
     def clean(self):
-        """Verify password confirmation match."""
         data = super().clean()
 
         password = data['password']
         password_confirmation = data['password_confirmation']
 
+        """Verify password confirmation match."""
         if password != password_confirmation:
             raise forms.ValidationError('Las contraseñas no coinciden.')
 
