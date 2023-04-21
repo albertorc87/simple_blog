@@ -3,7 +3,7 @@ django-ckeditor==5.8.0
 django-js-asset==1.2.2
 Pillow>=6.2.2
 pytz==2019.3
-sqlparse==0.3.0
+sqlparse==0.4.4
 django-bootstrap4
 psycopg2
 django-environ==0.4.5
